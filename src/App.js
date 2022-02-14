@@ -3,6 +3,7 @@ import "./App.css";
 import Counter from "./Counter";
 import Test from "./hooksConcepts/Test";
 import projectContext from "./ProjectContext";
+import ReduxExample from "./redux";
 import TestRoutes from "./TestRoutes";
 import User from "./User";
 
@@ -11,10 +12,7 @@ function App() {
 
   return (
     <div className="Test">
-      <projectContext.Provider value={{ count, setCount }}>
-        <Test />
-        <User />
-      </projectContext.Provider>
+      <ReduxExample />
     </div>
   );
 }
